@@ -97,8 +97,9 @@ class RbTaskboardsController < RbApplicationController
       statuses[5] = status if status.name == 'Closed'
       statuses[6] = status if status.name == 'Stopped'
       statuses[7] = status if status.name == 'Refusal'
-      statuses[8] = status if status.name == 'Documentation'
-      statuses[9] = status if status.name == 'Code review'
+      statuses[8] = status if status.name == 'Feedback'
+      statuses[9] = status if status.name == 'Documentation'
+      statuses[10] = status if status.name == 'Code review'
     end
 
     if false && User.current.admin? #disabling all columns for admin users
